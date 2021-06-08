@@ -32,8 +32,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
     var i;
-    var slides = document.getElementsByClassName("hisSlides");
-    var dots = document.getElementsByClassName("dot");
+    var slides = $(".hisSlides");
+    var dots = $(".dot");
     if (n > slides.length) {slideIndex = 1}    
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {

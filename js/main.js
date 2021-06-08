@@ -1,4 +1,4 @@
-console.log("hello");
+// console.log("hello"); yesto console haru hataunu parcha deployment ma
 $(window).scroll( function(){
 if($(this).scrollTop() > 100){
   $(".up").show();

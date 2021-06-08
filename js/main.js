@@ -1,11 +1,11 @@
 console.log("hello");
 $(window).scroll( function(){
 if($(this).scrollTop() > 100){
-  $(".up").removeClass("hey");
+  $(".up").show();
   $(".navbar").addClass("fixed-top");
 }
 else{
-  $(".up").addClass("hey");
+  $(".up").hide();
   $(".navbar").removeClass("fixed-top");
 }
 });

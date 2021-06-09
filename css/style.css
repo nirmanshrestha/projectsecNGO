@@ -481,6 +481,18 @@ footer .letter .followus .footer-socialmedia a {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  .slider-banner {
+    width: 100%;
+  }
+  .slider-banner .hisSlides .caption-text {
+    width: 80%;
+  }
+}
+
 @-webkit-keyframes fadeout {
   from {
     opacity: .4;

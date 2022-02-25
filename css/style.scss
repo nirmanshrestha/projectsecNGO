@@ -1,419 +1,436 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-$bg-1:#373839;
-$primary:#ECC731;
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-  -family: 'Roboto', sans-serif;
+$bg-1: #373839;
+$primary: #ecc731;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  -family: "Roboto", sans-serif;
 }
 
-header{
-    background: #26211D;
-    .top-header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        color: white;
-        .social-media{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px;
-            a{
-                text-decoration: none;
-                color: white;
-            
-            i{
-                font-size: 25px;
-                padding: 0 10px;
-            }
-        }
-        .become-one{
-            padding: 0 10px;
-        }
-        }
-    }
-}
-.slider-banner{
-    height: 100%;
-    margin: auto;
-    .fade-out{
-        animation: fadeout 1.5s;
-        height: 100%;
-        width: 100%;
-    }
-    .hisSlides{
-        display: none;
-    }
-    .prev, .next{
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+header {
+  background: #26211d;
+  .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    .social-media {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      a {
         text-decoration: none;
-        color: #f2f2f2;
-        font-size: 20px;
-        width: auto;
-        padding: 16px;
-        font-weight: bold;
-        transition: .6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        
+        color: white;
+
+        i {
+          font-size: 25px;
+          padding: 0 10px;
+        }
+      }
+      .become-one {
+        padding: 0 10px;
+      }
     }
-    
-    
-    .next{
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-    .prev:hover, .next:hover{
-        background:rgba(0,0,0,.8);
-    }
-    .caption-text{
-        left: 50px;
-        color: #f2f2f2;
-        font-size: 15px;
-        padding: 8px 12px;
-        position: absolute;
-        
-        width: 100%;
-        text-align: left;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-      
+  }
+}
+.slider-banner {
+  height: 100%;
+  margin: auto;
+  .fade-out {
+    animation: fadeout 1.5s;
+    height: 100%;
+    width: 100%;
+  }
+  .hisSlides {
+    display: none;
+  }
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 20px;
+    width: auto;
+    padding: 16px;
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover,
+  .next:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .caption-text {
+    left: 50px;
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-.our-cause{
-    h3{
-        text-align: center;
-        strong{
-            border-bottom: 2px solid #ECC731;
-        }
-    }
-    .cause-container{
-        padding-top: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .cause-1, .cause-2, .cause-3{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            img{
-                width: 360px;
-            }
-        }
-    }
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
-.how-help{
-    .media{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        .media-icon{
-            background: #ECC731;
-            padding: 20px;
-            font-size: 20px;
-            img{
-                max-width: 30px;
-            }
-        }
-    }
+.active,
+.dot:hover {
+  background-color: #717171;
 }
-.becomeVol{
-    background: url(../Img/volunteer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 60vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.news{
-    .news-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        .news-box{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 360px;
-            .news-info{
-                padding: 10px 0;
-                span{
-                    font-size: 15px;
-                    color: rgba(0, 0, 0, 0.589);
-                }
-            }
-        }
-    }
-}
-.donators{
-    color: white;
-    height: 70vh;
+.our-cause {
+  h3 {
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,.6), rgba(0, 0, 0, 0.5)), url(../Img/slide-banner-02.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    strong {
+      border-bottom: 2px solid #ecc731;
+    }
+  }
+  .cause-container {
+    padding: 30px 0 0 0;
+    display: flex;
+    gap: 10px;
+
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .cause-1,
+    .cause-2,
+    .cause-3 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 360px;
+    }
+  }
+}
+.how-help {
+  .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .media-icon {
+      background: #ecc731;
+      padding: 20px;
+      font-size: 20px;
+      img {
+        max-width: 30px;
+      }
+    }
+  }
+}
+.becomeVol {
+  background: url(../Img/volunteer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.news {
+  .news-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    .news-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 360px;
+      .news-info {
+        padding: 10px 0;
+        span {
+          font-size: 15px;
+          color: rgba(0, 0, 0, 0.589);
+        }
+      }
+    }
+  }
+}
+.donators {
+  color: white;
+  height: 70vh;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url(../Img/slide-banner-02.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .donors {
+    p {
+      font-size: 20px;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+footer {
+  background-color: $bg-1;
+  color: white;
+  .logo {
+    max-width: 200px;
+    padding: 5px 0;
+  }
+  .info {
+    .email,
+    .phone,
+    .home {
+      display: flex;
+      p {
+        padding: 0 10px;
+      }
+      i {
+        font-size: 30px;
+      }
+    }
+  }
+  .recent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .donors{
-
-       p{
-           font-size: 20px;
-       }
-       h3{
-           text-transform: uppercase;
-       }
-       span{
-           font-size: 12px;
-       }
+    justify-content: flex-start;
+    h2 {
+      text-transform: uppercase;
     }
-}
-
-footer{
-    background-color: $bg-1;
-    color: white;
-    .logo{
-        max-width: 200px;
-        padding: 5px 0;
+    p {
+      font-size: 18px;
     }
-    .info{
-        .email, .phone, .home{
-            display: flex;
-            p{
-                padding: 0 10px;
-            }
-            i{
-                font-size: 30px;
-            }
-
-        }
+    ul {
+      list-style: none;
+      text-align: left;
+      li {
+        padding: 5px;
+      }
     }
-    .recent{
+  }
+  .letter {
+    form {
+      display: flex;
+      input {
+        padding: 5px 10px;
+      }
+    }
+    .followus {
+      padding: 10px 0;
+      .footer-socialmedia {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        h2{
-            text-transform: uppercase;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 30px;
+          padding: 0 5px;
         }
-        p{
-            font-size: 18px;
-        }
-        ul{
-            list-style: none;
-            text-align: left;
-            li{
-                padding: 5px;
-            }
-        }
-       
+      }
     }
-    .letter{
-        form{
-            display: flex;
-            input{
-                padding: 5px 10px;
-            }
-        }
-        .followus{
-            padding: 10px 0;
-            .footer-socialmedia{
-                display: flex;
-                
-                a{
-                    text-decoration: none;
-                    color: white;
-                    font-size: 30px;
-                    padding: 0 5px;
-                }
-            }
-        }
-    }
+  }
 }
-.hey{
-    display: none !important;
+.hey {
+  display: none !important;
 }
-.up{
-    background: #ECC731;
-    position: fixed;
-    bottom: 30px;
-    right: 50px;
-    z-index: 500;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    span{
-        font-size: 20px;
-    }
+.up {
+  background: #ecc731;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  z-index: 500;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  span {
+    font-size: 20px;
+  }
 }
 
-@media only screen and (max-width: 600px){
-    header{
-        .top-header{
-            .social-media{
-                .become-one{
-                    h6{
-                        font-size: 12px;
-                    }
-                }
-                .header-socialmedia{
-                    display: none;
-            }
-            
-            }
-        }
-        .hey{
-            position: fixed;
-            left: 0;
-            top: 0;
-            z-index: 999;
-            
-        }
-       
-    }
-    .slider-banner{
-        button{
+@media only screen and (max-width: 600px) {
+  header {
+    .top-header {
+      .social-media {
+        .become-one {
+          h6 {
             font-size: 12px;
+          }
         }
-        p{
-            font-size: 12px;
+        .header-socialmedia {
+          display: none;
         }
+      }
     }
- 
-    .our-cause{
-    h3{
+    .hey {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 999;
+    }
+  }
+  .slider-banner {
+    button {
+      font-size: 12px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+
+  .our-cause {
+    h3 {
+      font-size: 14px;
+    }
+
+    .cause-container {
+      flex-direction: column;
+      h5 {
+        font-size: 16px;
+      }
+      h6 {
         font-size: 14px;
-        
-    }
-    .cause-container{
-        flex-direction: column;
-        h5{
-            font-size:16px;
-        }
-        h6{
-           
-            font-size:14px; 
-        }
-        p{
-           font-size: 12px; 
-        }
-    }
-    }
-    .becomeVol{
-        
-            h6{
-                font-size: 16px;
-            }
-            p{
-                font-size: 12px;
-            }
-        
-    }
-    .news{
-    .news-container{
-        flex-direction: column;
-        .news-box{
-            padding: 15px 0;
-            text-align: center;
-        }
-    }
-}
-.donators{
-    .donors{
-        h3{
-            font-size: 18px;
-        }
-        p{
-            font-size: 12px;
-        }
-    }
-   
-}
-footer{
-    .rwd{
-        display: flex;
-        flex-direction: column;
-        justify-content: center ;
-        align-items: center;
-    }
-    
-    .info, .logo{
+      }
+      p {
         font-size: 12px;
-        padding: 10px 0;
+      }
     }
-    .ro{
-        flex-direction: row !important;
-        justify-content: space-around;
+  }
+  .how-help {
+    .media {
+      p {
+        font-size: 12px;
+      }
     }
+  }
+  .becomeVol {
+    h6 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .news {
+    .news-container {
+      flex-direction: column;
+      .news-box {
+        padding: 15px 0;
+        text-align: center;
+      }
+    }
+  }
+  .donators {
+    .donors {
+      h3 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  footer {
+    .rwd {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .info,
+    .logo {
+      font-size: 12px;
+      padding: 10px 0;
+    }
+    .ro {
+      flex-direction: row !important;
+      justify-content: space-around;
+    }
+  }
 }
-    
+@media only screen and (max-width: 500px) {
+  body {
+    width: 100%;
+  }
+  .slider-banner {
+    width: 100%;
+    .hisSlides {
+      .caption-text {
+        width: 80%;
+      }
+    }
+  }
 }
 
+@media only screen and (max-width: 912px) {
+  .cause-container {
+    flex-direction: column;
+    width: 100%;
+    h5 {
+      font-size: 16px;
+    }
+    h6 {
+      font-size: 14px;
+    }
+    p {
+      font-size: 12px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .cause-1,
+    .cause-2,
+    .cause-3 {
+      width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-socialmedia {
+    display: none;
+  }
+}
 
 @keyframes fadeout {
-    from{
-        opacity: .4;
-    }
-    to{
-        opacity: 1;
-    }
-    
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
